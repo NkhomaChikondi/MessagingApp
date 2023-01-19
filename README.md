@@ -2,6 +2,10 @@
 
 Messagin App with ASP.NET Core and SignalR
 
+![home page](1.png)
+![home page](2.png)
+![home page](3.png)
+
 ## CONTENTS OF THIS FILE
 
 - Introduction
