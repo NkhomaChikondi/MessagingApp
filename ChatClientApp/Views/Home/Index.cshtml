@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-8" id="joinGroupForm">
+                <div class="card">
+                    <div class="card-header">
+                        <h4></h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="form-control" type="text" id="userInput" placeholder="Enter User Name" />
+                            </div>
+                            <div class="col-6">
+                                <input type="button" class="btn btn-success" id="joinGroup" value="Join Group" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header text-center text-uppercase">
+                        <h4>
+                        <span id="activeUsersCount"></span>  Active User(s)
+                    </h4>
+                    </div>
+                    <div class="card-body">
+                         <ul id="usersList">
+
+                         </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-8">
+               <div class="card">
+                   <div class="card-body">
+                    <div class="col-5"><input type="text" class="form-control" placeholder="Enter message" id="messageInput" /></div>
+                   </div>
+                   <div class="card-footer">
+                        <input type="button" class="btn btn-info" id="sendButton" value="Send Message" />
+                   </div>
+               </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <ul id="messagesList"></ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+       
+       
+          
+</div>
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
